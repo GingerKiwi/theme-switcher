@@ -102,6 +102,9 @@ background-color: var(--radio-color);
 .color-picker input[type="radio"]#dark {
 --radio-color: #232323;
 }
+.color-picker input[type="radio"]#test {
+    --radio-color: #4e1a4b;
+}
 
 .pink {
 --clr-body-bg: hsl(310 50% 90%);
@@ -131,6 +134,13 @@ background-color: var(--radio-color);
 --clr-heading: hsl(209 50% 80%);
 }
 
+.test {
+    --clr-body-bg: hsl(310 50% 90%);
+    --clr-card-bg: hsl(310 50% 25%);
+    --clr-text: hsl(310 50% 75%);
+    --clr-heading: hsl(310 50% 100%);
+    }
+
 :root:has(#pink:checked) {
 --clr-body-bg: hsl(310 50% 90%);
 --clr-card-bg: hsl(310 50% 100%);
@@ -158,3 +168,11 @@ background-color: var(--radio-color);
 --clr-text: hsl(209 50% 90%);
 --clr-heading: hsl(209 50% 80%);
 }
+
+:root:has(#test:checked) {
+    font-size: 6rem;
+    /* --clr-body-bg: hsl(209 50% 10%);
+    --clr-card-bg: hsl(209 50% 5%);
+    --clr-text: hsl(209 50% 90%);
+    --clr-heading: hsl(209 50% 80%); */
+    }
